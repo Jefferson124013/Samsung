@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segredo Galaxy S - Descubra o Método</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d32f2f;
+        }
+        h2 {
+            color: #333;
+        }
+        .benefits, .testimonials {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .benefits li, .testimonials li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .cta {
+            background: #d32f2f;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta:hover {
+            background: #b71c1c;
+        }
+        .countdown {
+            font-size: 22px;
+            color: #d32f2f;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function countdownTimer() {
+            let countDownDate = new Date().getTime() + (1 * 60 * 60 * 1000); 
+            let x = setInterval(function() {
+                let now = new Date().getTime();
+                let distance = countDownDate - now;
+                let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s";
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "EXPIRADO";
+                }
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="countdownTimer()">
+    <div class="container">
+        <h1>Dono de um Samsung Galaxy? Descubra o Segredo Que Pode Gerar R$ 500 Por Dia Com Seu Celular!</h1>
+        <h2>Sem precisar vender nada. Sem precisar gravar vídeos. Sem precisar investir mais dinheiro.</h2>
+        <p>Essa oportunidade é exclusiva para donos de Samsung Galaxy S!</p>
+        
+        <h2>O Problema</h2>
+        <p>Se você tem um Samsung Galaxy S20, S21, S22 ou S23, pode estar deixando dinheiro na mesa...</p>
+        <p>Descubra funções ocultas que podem gerar até <strong>R$ 500 por dia de forma automática!</strong></p>
+        
+        <h2>Os Benefícios</h2>
+        <ul class="benefits">
+            <li>✅ Gera entre <strong>R$ 200 a R$ 500 por dia</strong></li>
+            <li>✅ Funciona com qualquer Samsung Galaxy S</li>
+            <li>✅ Não precisa vender nada</li>
+            <li>✅ Não precisa de conhecimento avançado</li>
+            <li>✅ Acesso vitalício ao método sem mensalidades</li>
+            <li>✅ Garantia de 7 dias</li>
+        </ul>
+        
+        <h2>Depoimentos Reais</h2>
+        <ul class="testimonials">
+            <li>"Comprei o método e já no primeiro dia fiz R$ 250! Recomendo demais!" - João M.</li>
+            <li>"Nunca imaginei que meu celular poderia me gerar dinheiro assim! Método sensacional!" - Ana C.</li>
+        </ul>
+        
+        <h2>Escassez e Urgência</h2>
+        <p>🔥 Inscrições abertas por tempo LIMITADO! Apenas <strong>X vagas restantes</strong>.</p>
+        <p class="countdown">Oferta expira em: <span id="countdown"></span></p>
+        
+        <h2>Oferta Especial</h2>
+        <p>O acesso vitalício ao Segredo Galaxy S custa apenas <strong>R$ 197</strong>.</p>
+        <p>Mas atenção: os primeiros <strong>50 compradores</strong> pagam apenas <strong>R$ 97</strong>!</p>
+        
+        <a href="#" class="cta">GARANTA SEU ACESSO AGORA!</a>
+    </div>
+</body>
+</html>
